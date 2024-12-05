@@ -61,7 +61,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
       try {
         final response = await http.post(
-          Uri.parse('http://192.168.1.5:5000/auth/register'),
+          Uri.parse(
+              'https://my-profile-app-vert.vercel.app:5000/auth/register'),
           headers: {'Content-Type': 'application/json'},
           body: jsonEncode({
             'username': fullName,

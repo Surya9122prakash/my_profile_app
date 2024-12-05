@@ -75,7 +75,7 @@ class _SignInScreenState extends State<SigninScreen> {
     try {
       final response = await http.post(
         Uri.parse(
-            'http://192.168.1.5:5000/auth/login'), // Replace with your backend URL
+            'https://my-profile-app-vert.vercel.app:5000/auth/login'), // Replace with your backend URL
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({'email': email, 'password': password}),
       );

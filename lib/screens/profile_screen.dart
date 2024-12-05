@@ -77,7 +77,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       }
 
       final response = await http.get(
-        Uri.parse('http://192.168.1.5:5000/user/profile'),
+        Uri.parse('https://my-profile-app-vert.vercel.app:5000/user/profile'),
         headers: {'Authorization': 'Bearer $token'},
       );
 
@@ -131,7 +131,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       }
 
       final response = await http.put(
-        Uri.parse('http://192.168.1.5:5000/user/profile'),
+        Uri.parse('https://my-profile-app-vert.vercel.app:5000/user/profile'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
